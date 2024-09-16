@@ -126,17 +126,17 @@ export default function Home() {
                     <ProductCard 
                         title="Consultas Personalizadas" 
                         description="Um acompanhamento de perto para a sua saúde íntima, oferecendo exames preventivos e diagnósticos completos." 
-                        icon="/src/assets/images/customQuery.png"
+                        icon="/images/customQuery.png"
                     />
                     <ProductCard 
                         title="Planejamento Familiar" 
                         description="Suporte diferenciado para quem não deseja engravidar e para quem deseja também."
-                        icon="/src/assets/images/familyPlan.png"
+                        icon="/images/familyPlan.png"
                     />
                     <ProductCard 
                         title="Acompanhamento Pré-Natal" 
                         description="Cuidados especializados para as futuras mamães, com suporte completo durante toda a gestação."
-                        icon="/src/assets/images/prenatalCare.png"
+                        icon="/images/prenatalCare.png"
                     />
                 </div>
             </section>
