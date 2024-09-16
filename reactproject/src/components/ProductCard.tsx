@@ -1,17 +1,17 @@
 import React from 'react';
-import '../styles/productCard.css'; // Atualize o caminho do arquivo CSS
+import '../styles/productCard.css';
 
 interface ProductCardProps {
   title: string;
   description: string;
+  icon: string;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ title, description }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon }) => {
   return (
     <div className="product-card">
       <div className="icon">
-        {/* Certifique-se de ajustar o caminho do ícone corretamente */}
-        <img src="/src/assets/icon.svg" alt="Ícone do Produto" />
+        <img src={icon} alt={`${title} ícone`} width="50" height="50" />
       </div>
       <h3>{title}</h3>
       <p>{description}</p>

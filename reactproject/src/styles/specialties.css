@@ -1,29 +1,36 @@
-.specialties-section {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
   .specialties-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
   
   .specialties-section {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
+    margin-top: -100px;
+    margin-bottom: 40px;
   }
 
   .specialties-section p {
-    font-size: 1.2rem;
+    font-family: var(--ff-sans);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-base);
+    color: var(--second-text-color);
+    line-height: 1.6;
     margin-bottom: 40px;
-    line-height: 1.5;
   }
-  
-  .highlight {
-    color: #007bff;
+
+  .specialties-section p a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .specialties-section p a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
   }
   
   .product-card-container {
