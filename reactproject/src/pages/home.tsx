@@ -1,4 +1,5 @@
 import Logo from "../assets/Logo.svg";
+import ProductCard from '../components/ProductCard';
 import "../styles/header.css";
 import "../styles/utility.css";
 import "../styles/buttons.css"
@@ -9,6 +10,7 @@ import Menu from "../assets/menu.svg";
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import "../styles/hero.css";
+import "../styles/specialties.css";
 
 export default function Home() {
 
@@ -24,7 +26,7 @@ export default function Home() {
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#solution">Soluções</a>
+                                <a href="#specialties">Especialidades</a>
                             </li>
                             <li>
                                 <a href="#testimonials">Depoimentos</a>
@@ -54,7 +56,7 @@ export default function Home() {
                                             <a href="#">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#solution">Soluções</a>
+                                            <a href="#specialties">Especialidades</a>
                                         </li>
                                         <li>
                                             <a href="#testimonials">Depoimentos</a>
@@ -91,10 +93,10 @@ export default function Home() {
 
                 <div className="container content">
                     <p className="desktop-only">
-                        Olá
+                        Olá!
                     </p>
-                    <h1>Comida de mãe direto no seu apê, é só pedir que entregamos para você!</h1>
-                    <p>Já pensou em matar a saudade daquela comida caseira? O melhor de tudo, nossas receitas são 100% saudáveis, bora entrar no shape.
+                    <h1>Preparada para a revolução em termos de Ginecologia e Obstetrícia?</h1>
+                    <p>Mais uma frase sobre Ginecologia e Obstetrícia 
                     </p>
                     <div className="flex gap-1">
                         <span><Button text="Cadastre-se" /></span>
@@ -103,8 +105,29 @@ export default function Home() {
                         </span>
                     </div>
                 </div>
+            </section>
 
+            <section className="specialties-section">
+                <h2>Soluções Sob medida para você</h2>
+                <p>
+                    Inovação é com a gente! A <span className="highlight">nome empresa</span> já conquistou diversos clientes,
+                    seja você mais um deles, veja tudo que pode ganhar com nossos serviços.
+                </p>
 
+                <div className="product-card-container">
+                    <ProductCard 
+                        title="Produto Vencedor" 
+                        description="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage." 
+                    />
+                    <ProductCard 
+                        title="Produto Vencedor" 
+                        description="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage." 
+                    />
+                    <ProductCard 
+                        title="Produto Vencedor" 
+                        description="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage." 
+                    />
+                </div>
             </section>
         </>
     )

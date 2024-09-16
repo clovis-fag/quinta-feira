@@ -1,0 +1,45 @@
+.specialties-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .specialties-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .specialties-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  .specialties-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  .product-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
