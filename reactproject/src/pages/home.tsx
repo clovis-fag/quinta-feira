@@ -118,7 +118,6 @@ export default function Home() {
             <section className="specialties-section" id="specialties">
                 <h2>Especialidades</h2>
                 <p>
-                Inovação é com a gente! <br/>
                 A Dra. Julia oferece serviços completos e personalizados para atender a saúde da mulher em todas as fases da vida. <br/>
                 Explore nossas soluções e veja como podemos ajudar você.
                 </p>
