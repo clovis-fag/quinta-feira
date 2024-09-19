@@ -1,10 +1,9 @@
 [build]
   command = "vite build"
-  functions = "netlify/functions"
   publish = "dist"
+  functions = "netlify/functions"
 
-# Redirecionamento de todas as rotas para /index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
+  status = 200
