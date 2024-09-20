@@ -14,27 +14,20 @@ import "../styles/specialties.css";
 import "../styles/productCard.css";
 
 export default function Home() {
-
-    const scrollToSpecialties = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        event.preventDefault();
-        const section = document.getElementById("specialties");
-        section?.scrollIntoView({ behavior: 'smooth' });
-      };
       
-
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
         <>
             <header className="container py-sm">
                 <nav className="flex items-center justify-between">
-                    <img src={Logo} alt="Logo Dra Julia" width={220} height={160} />
+                    <img src={Logo} alt="Logo Dra Julia" width={220} height={120} />
                     <div className="desktop-only">
                         <ul className="flex gap-1">
                             <li>
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#specialties" onClick={scrollToSpecialties}>Especialidades</a>
+                                <a href="#specialties">Especialidades</a>
                             </li>
                             <li>
                                 <a href="#testimonials">Depoimentos</a>
