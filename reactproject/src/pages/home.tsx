@@ -97,7 +97,7 @@ export default function Home() {
                         Olá!
                     </p>
                     <h1>Me chamo Julia Ximenes, sou médica Ginecologista e apaixonada por Obstetrícia!</h1>
-                    <p>Sou formada médica pelo Centro Universitário Assis Gurgacz, ginecologista e obstetra pela Universidade de Saõ Paulo. <br/>CRM/PR 121097 
+                    <p> Médica pelo Centro Universitário Assis Gurgacz, ginecologista e obstetra pela Universidade de Saõ Paulo. <br/>CRM/PR 121097 
                     </p>
                     <div className="flex gap-1">
                         <span><Button text="Cadastre-se" /></span>
