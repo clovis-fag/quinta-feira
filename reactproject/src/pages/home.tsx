@@ -1,9 +1,10 @@
 import Logo from "../assets/Logo.svg";
 import ProductCard from '../components/ProductCard';
+import Testimonials from "../components/Testimonials";
 import "../styles/header.css";
 import "../styles/utility.css";
 import "../styles/buttons.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../components/Buttons";
 import Close from "../assets/close.svg";
 import Menu from "../assets/menu.svg";
@@ -16,6 +17,14 @@ import "../styles/productCard.css";
 export default function Home() {
       
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    useEffect(() => {
+        const html = document.querySelector("html");
+        if (html) {
+            html.style.overflow = showMobileMenu ? "hidden" : "auto";
+        }
+    }, [showMobileMenu]);
+
     return (
         <>
             <header className="container py-sm">
@@ -54,19 +63,19 @@ export default function Home() {
                                 <div className="container flex">
                                     <ul>
                                         <li>
-                                            <a href="#">Home</a>
+                                            <a onClick={() => setShowMobileMenu(false)} href="#">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#specialties">Especialidades</a>
+                                            <a onClick={() => setShowMobileMenu(false)} href="#specialties">Especialidades</a>
                                         </li>
                                         <li>
-                                            <a href="#testimonials">Depoimentos</a>
+                                            <a onClick={() => setShowMobileMenu(false)} href="#testimonials">Depoimentos</a>
                                         </li>
                                         <li>
-                                            <a href="#pricing">Preços</a>
+                                            <a onClick={() => setShowMobileMenu(false)} href="#pricing">Preços</a>
                                         </li>
                                         <li>
-                                            <a href="#contact">Contato</a>
+                                            <a onClick={() => setShowMobileMenu(false)} href="#contact">Contato</a>
                                         </li>
                                     </ul>
                                     <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
@@ -133,6 +142,9 @@ export default function Home() {
                     />
                 </div>
             </section>
+
+            <Testimonials />
+            
         </>
     )
 }

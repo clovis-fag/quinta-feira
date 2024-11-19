@@ -1,0 +1,102 @@
+#testimonials {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+}
+
+.testimonials-section {
+    background-color: #49E6DE;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.testimonials-section header {
+    margin-bottom: 2rem;
+}
+
+.testimonials-section header p.desktop-only {
+    color: #000000;
+    font-weight: bold;
+}
+
+.testimonials-section header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.testimonials-section header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.carousel-content {
+    display: flex;
+    gap: 2rem;
+    animation: swipe 30s linear infinite;
+}
+
+.carousel-card {
+    flex: 0 0 calc(33.333% - 2rem);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+.carousel-card .profile-image-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+
+.carousel-card p {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.carousel-card .rating {
+    font-size: 1.2rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.carousel-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.carousel-card span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@keyframes swipe {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel:hover .carousel-content {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
