@@ -1,6 +1,9 @@
 import Logo from "../assets/Logo.svg";
 import ProductCard from '../components/ProductCard';
 import Testimonials from "../components/Testimonials";
+import Pricing from "../components/Pricing";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import "../styles/header.css";
 import "../styles/utility.css";
 import "../styles/buttons.css"
@@ -13,6 +16,7 @@ import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import "../styles/hero.css";
 import "../styles/specialties.css";
 import "../styles/productCard.css";
+
 
 export default function Home() {
       
@@ -144,7 +148,12 @@ export default function Home() {
             </section>
 
             <Testimonials />
-            
+
+            <Pricing />
+
+            <Contact />
+
+            <Footer />  
         </>
     )
 }

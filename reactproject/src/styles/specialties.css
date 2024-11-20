@@ -12,6 +12,7 @@
     padding: 50px 20px;
     margin-top: 10px;
     margin-bottom: 65px;
+    min-height: 100vh;
   }
 
   .specialties-section p {

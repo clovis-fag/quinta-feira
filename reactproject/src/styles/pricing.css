@@ -1,0 +1,106 @@
+.pricing-section {
+    background-color: #f9fbfc;
+    padding: 4rem 1rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-section header .subtitle {
+    font-size: 1rem;
+    color: #49E6DE;
+    font-weight: bold;
+}
+
+.pricing-section header h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pricing-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    flex: 0 1 calc(33.333% - 1rem);
+    max-width: 350px;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.pricing-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 1rem 0;
+}
+
+.pricing-card h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #49E6DE;
+}
+
+.pricing-card h4 span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.pricing-card ul li {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background: none;
+    color: #49E6DE;
+    border: 1px solid #49E6DE;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #49E6DE;
+    color: #fff;
+}
+
+.featured {
+    border: 2px solid #49E6DE;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .pricing-card {
+        flex: 0 1 100%;
+    }
+}
